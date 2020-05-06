@@ -8,7 +8,7 @@ add: net-tools,curl,tree,nginx
 Copy the sources to your docker host and build the container, and to run.
 ```
 	docker build --rm -t sennes2/nginx .
-	docker run -d --name n1 sennes2/nginx
+	docker run -d --name n1 -p 8888:80 sennes2/nginx
 ```
 
 
